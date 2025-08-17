@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+.countdown-container {
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    aspect-ratio: 1000 / 1333;
+    background-image: url('https://raw.githubusercontent.com/Merlin0205/Odpocet/main/file_00000000ac3061f4b89c66d9ba876b2f.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.countdown {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.time-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%); /* Center based on the left property */
+}
+
+#days-section {
+    top: 12.2%;
+    left: 24%;
+}
+
+#hours-section {
+    top: 12.2%;
+    left: 50%;
+}
+
+#minutes-section {
+    top: 12.2%;
+    left: 76%;
+}
+
+.time-section span {
+    font-family: 'Orbitron', sans-serif;
+    color: #E80A0A;
+    font-size: 6.2vw;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+}
+
+.time-section small {
+    color: white;
+    font-size: 1.4vw;
+    font-weight: bold;
+    margin-top: 0.8vw;
+    text-transform: uppercase;
+}
+
+#seconds-section {
+    display: none;
+}
+
+/* Media query for larger screens for non-responsive sizing */
+@media (min-width: 768px) {
+    .time-section span {
+        font-size: 48px;
+    }
+    .time-section small {
+        font-size: 11px;
+    }
+    #days-section { top: 12.2%; left: 24%; }
+    #hours-section { top: 12.2%; left: 50%; }
+    #minutes-section { top: 12.2%; left: 76%; }
+}
