@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>vYpYčenÝ SoutředěnÝ 7 – Odpočet</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f1115"/>
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Install banner -->
+  <div id="installBanner" class="install-banner hidden">
+    <div class="msg">📌 Můžeš si mě přidat na plochu pro rychlý přístup.</div>
+    <div class="actions">
+      <button id="installBtn" class="btn">Přidat</button>
+      <button id="closeBanner" class="btn ghost">Zavřít</button>
+    </div>
+  </div>
+
+  <header class="heading-wrap">
+    <h1 class="mega-title">
+      <span class="weird">vYpYčenÝ&nbsp;SoutředěnÝ</span>
+      <svg class="seven-bottle" viewBox="0 0 120 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+        <defs>
+          <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffd773"/>
+            <stop offset="60%" stop-color="#f6c54d"/>
+            <stop offset="100%" stop-color="#e3a21a"/>
+          </linearGradient>
+          <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f1f5ff" stop-opacity=".75"/>
+            <stop offset="100%" stop-color="#c8d1db" stop-opacity=".35"/>
+          </linearGradient>
+        </defs>
+        <path d="M70 10 h-20 v30 c0 6 -6 12 -12 16 l-8 5 v12 h40 v20 c0 8 -3 12 -8 18 l-14 16 c-6 6 -8 9 -8 16 v45 c0 8 6 14 14 14 h28 c8 0 14 -6 14 -14 v-45 c0 -10 3 -15 10 -23 l10 -12 c6 -7 8 -13 8 -21 v-31 c0 -12 -10 -25 -24 -25 h-20 z"
+              fill="url(#glass)" stroke="#aab6c3" stroke-width="3" />
+        <path d="M76 105 h-10 c-8 0 -14 6 -14 14 v77 h26 c5 0 9 -4 9 -9 v-52 c0 -6 2 -10 6 -15 l6 -7 c3 -3 5 -7 5 -11 v-7 c0 -5 -4 -9 -9 -9 h-19 z"
+              fill="url(#liq)" opacity=".85"/>
+        <rect x="52" y="8" width="16" height="10" rx="2" ry="2" fill="#6b4e2e"/>
+      </svg>
+    </h1>
+    <div class="start-time">Začátek: <strong>25.&nbsp;09.&nbsp;2025&nbsp;13:00</strong></div>
+  </header>
+
+  <main class="container">
+    <section class="countdown-wrap">
+      <div class="flip-grid">
+        <div class="flip-unit">
+          <div class="label">Dny</div>
+          <div class="flip-card single" id="days"></div>
+        </div>
+        <div class="flip-unit">
+          <div class="label">Hodiny</div>
+          <div class="flip-card single" id="hours"></div>
+        </div>
+        <div class="flip-unit">
+          <div class="label">Minuty</div>
+          <div class="flip-card single" id="minutes"></div>
+        </div>
+        <div class="flip-unit">
+          <div class="label">Sekundy</div>
+          <div class="flip-card single" id="seconds"></div>
+        </div>
+      </div>
+
+      <div class="beer-wrap">
+        <div class="beer-label">SEKU&lt;!&gt;OVÝ KRIGL</div>
+        <div class="beer-glass big">
+          <div class="beer-foam"></div>
+          <div class="beer-liquid" id="beerFill"></div>
+          <div class="beer-glass-front"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hero-bottom">
+    <img src="assets/pivo_rum.png" alt="Pilsner Urquell + Božkov" class="hero-img"/>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>
